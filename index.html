@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="cart.html">Cart (10)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact-us.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="faq.html">FAQ</a>
+            </li>
+          </ul>
+          <form class="d-flex" id="search-form">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://img.freepik.com/premium-vector/woman-holding-smartphone-girl-using-online-mobile-app-social-media-communication-concept-copy-space-horizontal-full-length-vector-illustration_48369-42140.jpg?w=900"
+              class="d-block w-100 banner-item" alt="Banner-image-1">
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://img.freepik.com/free-vector/flat-design-shopping-center-twitch-background_23-2149337408.jpg?t=st=1729359411~exp=1729363011~hmac=392a012a7cf2275d789e3ac4a60a5f1750ac976e9808bbc777eb3ccc6e7ef5a4&w=900"
+              class="d-block w-100 banner-item" alt="Banner-image-2">
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://img.freepik.com/free-vector/flat-design-shopping-center-twitter-header_23-2149337407.jpg?t=st=1729359534~exp=1729363134~hmac=badbc1da5bbd09282e9d94599392079d0e1810360c2e965e48053a0bba5f2b52&w=826"
+              class="d-block w-100 banner-item" alt="Banner-image-3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="container">
+      <h1 class="text-center text-primary-emphasis py-4">Products</h1>
+      <div class="row gy-3 gx-3 justify-content-center" id="product-list">
+          <!-- Products will be dynamically inserted here -->
+      </div>
+  </section>  
+  </main>
+  <hr>
+  <footer class="bg-light text-center text-lg-start mt-5">
+    <div class="container p-4">
+      <div class="row">
+        <!-- About Us Column -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">About Us</h5>
+          <p>
+            We are an online store offering a variety of products at great prices. Our mission is to provide a seamless shopping experience for all customers.
+          </p>
+        </div>
+  
+        <!-- Quick Links Column -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Quick Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="index.html" class="text-dark">Home</a></li>
+            <li><a href="cart.html" class="text-dark">Cart</a></li>
+            <li><a href="contact-us.html" class="text-dark">Contact Us</a></li>
+            <li><a href="faq.html" class="text-dark">FAQ</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Info Column -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Contact Us</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="mailto:support@onlinestore.com" class="text-dark">support@onlinestore.com</a></li>
+            <li><a href="tel:+1234567890" class="text-dark">+1 234 567 890</a></li>
+            <li><span class="text-dark">1234 Market St, City, Country</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Copyright -->
+    <div class="text-center p-3 bg-dark text-light">
+      © <span id="current-year"></span> Online Store. All Rights Reserved.
+    </div>
+  </footer>  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="general.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+</body>
+
+</html>

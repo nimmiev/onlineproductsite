@@ -1,0 +1,57 @@
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+.banner-item{
+    height: 500px;
+    object-fit: fill;
+}
+
+.card-img-top{
+    padding: 20px;
+    margin: 0;
+    height: 250px;
+}
+
+.card-text{
+    overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+           line-clamp: 3; 
+   -webkit-box-orient: vertical;
+}
+
+.card-title{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+
+/* .card-body{
+    height: 300px;
+} */
+
+.card-body {
+    font-size: 1rem; /* Default size */
+}
+
+@media (max-width: 576px) {
+    .card-body {
+        font-size: 0.9rem; /* Smaller size for small screens */
+    }
+}
+
+.card-body .btn {
+    height: 54Spx; /* Set a fixed height for buttons */
+}
+
+.card-body .d-flex a {
+    flex: 1; /* Ensure buttons take equal width */
+    margin-right: 10px; /* Add spacing between buttons */
+}
+
+.card-body .d-flex a:last-child {
+    margin-right: 0; /* Remove margin for the last button */
+}
